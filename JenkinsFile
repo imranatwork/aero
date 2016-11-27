@@ -1,3 +1,6 @@
 node{
- echo 'Hello World'
+ echo 'Starting project build'
+ git url: 'https://github.com/imranatwork/aero.git'
+ sh "mvn -B verify"
+ sh "mvn clean install"
 }
